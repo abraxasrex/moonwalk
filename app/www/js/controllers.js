@@ -8,8 +8,6 @@
     function HomeCtrl() {
         var vm = this;
 
-
-
     }
 
 
