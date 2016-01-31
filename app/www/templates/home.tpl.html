@@ -1,0 +1,41 @@
+<ion-view title="Moonwalk?">
+    <style>
+        .content{
+            background-color: pink;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width:100%;
+            position:absolute;
+            top: 0;
+            left:0;
+            bottom: 0;
+        }
+        .content .stuff-and-things{
+            width: 95%;
+            max-width: 200px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content .stuff-and-things .logo{
+            max-width:80%;
+        }
+    </style>
+    <div class="content">
+        <div class="stuff-and-things" style="">
+            <img class="logo" src="../img/logo.png" />
+            <a ui-sref="other.tree" class="button button-block button-light">
+                Enter!
+            </a>
+        </div>
+
+    </div>
+    <!--<ion-nav-buttons side="left">-->
+        <!--<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>-->
+    <!--</ion-nav-buttons>-->
+    <!--<ion-content class="has-header">-->
+    <!--</ion-content>-->
+</ion-view>
