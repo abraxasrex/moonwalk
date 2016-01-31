@@ -1,13 +1,13 @@
 angular.module('starter.controllers', [])
 
-.controller('MapCtrl', function($scope, $ionicLoading) {
-  $scope.mapCreated = function(map) {
+.controller('MapCtrl', function ($scope, $ionicLoading) {
+  $scope.mapCreated = function (map) {
     $scope.map = map;
   };
 
   $scope.centerOnMe = function () {
     console.log("Centering");
-    if (!$scope.map) {
+    if(!$scope.map) {
       return;
     }
 
@@ -20,8 +20,7 @@ angular.module('starter.controllers', [])
       console.log('Got pos', pos);
       $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
       $scope.loading.hide();
-    }, function (error) {
-      alert('Unable to get location: ' + error.message);
-    });
+    }, function (error) {});
+    alert('Unable to get location: ' + error.message);
   };
 });
