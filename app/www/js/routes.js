@@ -7,7 +7,7 @@
             $urlRouterProvider.otherwise ('/');
 
             $stateProvider.state ('home', {
-                    url: '/home',
+                    url: '/',
                     templateUrl: templateUrl + 'home.tpl.html',
                     controller: 'HomeCtrl as Home'
                 })
@@ -18,7 +18,7 @@
                 })
                 .state ('other.tree', {
                     url: '/',
-                    template: '<ion-content><p>Tree of Doom!</p></ion-content>'
+                    template: '<map on-create="mapCreated(map)"></map>'
                 })
         })
 
