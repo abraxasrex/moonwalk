@@ -8,6 +8,8 @@
     function HomeCtrl() {
         var vm = this;
 
+        vm.hello = 'sadasdasdasd';
+
     }
 
 
